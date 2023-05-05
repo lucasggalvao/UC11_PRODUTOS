@@ -166,6 +166,28 @@ namespace UC11_PRODUTOS
         private void dataGridViewProdutos_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             textBoxID.Text = dataGridViewProdutos.CurrentRow.Cells[0].Value.ToString();
+            textBoxDescricao.Text = dataGridViewProdutos.CurrentRow.Cells[1].Value.ToString();
+            textBoxCategoria.Text = dataGridViewProdutos.CurrentRow.Cells[2].Value.ToString();
+            textBoxPreco.Text = dataGridViewProdutos.CurrentRow.Cells[3].Value.ToString().Replace(".", ",");
+        }
+
+        private void buttonAlterar_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                conexao.Open();
+                comando.CommandText = "UPDATE tbl_produtos SET descricao = '" + textBoxDescricao.Text + "', categoria = '" + textBoxCategoria.Text + "', preco = " + textBoxPreco.Text + " WHERE id = " + textBoxID.Text + " ;";
+                comando.ExecuteNonQuery();
+                MessageBox.Show("Produto alterado com sucesso!");
+            }
+            catch (Exception erro_mysql)
+            {
+                MessageBox.Show("Erro ao alterar produto! Verifique os valores digitados!!");
+            }
+            finally
+            {
+                conexao.Close();
+            }
         }
     }
 }

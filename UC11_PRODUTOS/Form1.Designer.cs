@@ -41,6 +41,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.dataGridViewProdutos = new System.Windows.Forms.DataGridView();
             this.buttonAtualizar = new System.Windows.Forms.Button();
+            this.buttonAlterar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewProdutos)).BeginInit();
             this.SuspendLayout();
             // 
@@ -49,7 +50,7 @@
             this.labelProduto.AutoSize = true;
             this.labelProduto.BackColor = System.Drawing.Color.Transparent;
             this.labelProduto.ForeColor = System.Drawing.Color.White;
-            this.labelProduto.Location = new System.Drawing.Point(12, 92);
+            this.labelProduto.Location = new System.Drawing.Point(12, 126);
             this.labelProduto.Name = "labelProduto";
             this.labelProduto.Size = new System.Drawing.Size(110, 13);
             this.labelProduto.TabIndex = 0;
@@ -61,7 +62,7 @@
             this.labelPreco.AutoSize = true;
             this.labelPreco.BackColor = System.Drawing.Color.Transparent;
             this.labelPreco.ForeColor = System.Drawing.Color.White;
-            this.labelPreco.Location = new System.Drawing.Point(12, 306);
+            this.labelPreco.Location = new System.Drawing.Point(12, 340);
             this.labelPreco.Name = "labelPreco";
             this.labelPreco.Size = new System.Drawing.Size(90, 13);
             this.labelPreco.TabIndex = 1;
@@ -73,7 +74,7 @@
             this.labelCategoria.AutoSize = true;
             this.labelCategoria.BackColor = System.Drawing.Color.Transparent;
             this.labelCategoria.ForeColor = System.Drawing.Color.White;
-            this.labelCategoria.Location = new System.Drawing.Point(12, 202);
+            this.labelCategoria.Location = new System.Drawing.Point(12, 236);
             this.labelCategoria.Name = "labelCategoria";
             this.labelCategoria.Size = new System.Drawing.Size(110, 13);
             this.labelCategoria.TabIndex = 2;
@@ -82,7 +83,7 @@
             // 
             // textBoxDescricao
             // 
-            this.textBoxDescricao.Location = new System.Drawing.Point(15, 108);
+            this.textBoxDescricao.Location = new System.Drawing.Point(15, 142);
             this.textBoxDescricao.Name = "textBoxDescricao";
             this.textBoxDescricao.Size = new System.Drawing.Size(259, 20);
             this.textBoxDescricao.TabIndex = 3;
@@ -90,7 +91,7 @@
             // 
             // textBoxCategoria
             // 
-            this.textBoxCategoria.Location = new System.Drawing.Point(15, 218);
+            this.textBoxCategoria.Location = new System.Drawing.Point(15, 252);
             this.textBoxCategoria.Name = "textBoxCategoria";
             this.textBoxCategoria.Size = new System.Drawing.Size(259, 20);
             this.textBoxCategoria.TabIndex = 4;
@@ -98,7 +99,7 @@
             // 
             // textBoxPreco
             // 
-            this.textBoxPreco.Location = new System.Drawing.Point(15, 322);
+            this.textBoxPreco.Location = new System.Drawing.Point(15, 356);
             this.textBoxPreco.Name = "textBoxPreco";
             this.textBoxPreco.Size = new System.Drawing.Size(259, 20);
             this.textBoxPreco.TabIndex = 5;
@@ -106,7 +107,7 @@
             // 
             // buttonCadastrar
             // 
-            this.buttonCadastrar.Location = new System.Drawing.Point(15, 363);
+            this.buttonCadastrar.Location = new System.Drawing.Point(15, 397);
             this.buttonCadastrar.Name = "buttonCadastrar";
             this.buttonCadastrar.Size = new System.Drawing.Size(116, 23);
             this.buttonCadastrar.TabIndex = 6;
@@ -116,7 +117,7 @@
             // 
             // buttonLIMPAR
             // 
-            this.buttonLIMPAR.Location = new System.Drawing.Point(137, 363);
+            this.buttonLIMPAR.Location = new System.Drawing.Point(137, 397);
             this.buttonLIMPAR.Name = "buttonLIMPAR";
             this.buttonLIMPAR.Size = new System.Drawing.Size(137, 23);
             this.buttonLIMPAR.TabIndex = 7;
@@ -126,7 +127,7 @@
             // 
             // buttonExcluir
             // 
-            this.buttonExcluir.Location = new System.Drawing.Point(15, 469);
+            this.buttonExcluir.Location = new System.Drawing.Point(6, 574);
             this.buttonExcluir.Name = "buttonExcluir";
             this.buttonExcluir.Size = new System.Drawing.Size(116, 23);
             this.buttonExcluir.TabIndex = 8;
@@ -136,7 +137,7 @@
             // 
             // textBoxID
             // 
-            this.textBoxID.Location = new System.Drawing.Point(137, 469);
+            this.textBoxID.Location = new System.Drawing.Point(137, 574);
             this.textBoxID.Multiline = true;
             this.textBoxID.Name = "textBoxID";
             this.textBoxID.Size = new System.Drawing.Size(137, 23);
@@ -148,7 +149,7 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(12, 439);
+            this.label1.Location = new System.Drawing.Point(12, 540);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(262, 16);
             this.label1.TabIndex = 10;
@@ -158,9 +159,9 @@
             // 
             this.dataGridViewProdutos.BackgroundColor = System.Drawing.SystemColors.Control;
             this.dataGridViewProdutos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewProdutos.Location = new System.Drawing.Point(306, 92);
+            this.dataGridViewProdutos.Location = new System.Drawing.Point(306, 126);
             this.dataGridViewProdutos.Name = "dataGridViewProdutos";
-            this.dataGridViewProdutos.Size = new System.Drawing.Size(303, 400);
+            this.dataGridViewProdutos.Size = new System.Drawing.Size(303, 366);
             this.dataGridViewProdutos.TabIndex = 11;
             this.dataGridViewProdutos.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewProdutos_CellContentClick);
             // 
@@ -174,12 +175,23 @@
             this.buttonAtualizar.UseVisualStyleBackColor = true;
             this.buttonAtualizar.Click += new System.EventHandler(this.buttonAtualizar_Click);
             // 
+            // buttonAlterar
+            // 
+            this.buttonAlterar.Location = new System.Drawing.Point(78, 426);
+            this.buttonAlterar.Name = "buttonAlterar";
+            this.buttonAlterar.Size = new System.Drawing.Size(116, 24);
+            this.buttonAlterar.TabIndex = 13;
+            this.buttonAlterar.Text = "Alterar";
+            this.buttonAlterar.UseVisualStyleBackColor = true;
+            this.buttonAlterar.Click += new System.EventHandler(this.buttonAlterar_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::UC11_PRODUTOS.Properties.Resources.embiid;
             this.ClientSize = new System.Drawing.Size(621, 609);
+            this.Controls.Add(this.buttonAlterar);
             this.Controls.Add(this.buttonAtualizar);
             this.Controls.Add(this.dataGridViewProdutos);
             this.Controls.Add(this.label1);
@@ -217,6 +229,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridView dataGridViewProdutos;
         private System.Windows.Forms.Button buttonAtualizar;
+        private System.Windows.Forms.Button buttonAlterar;
     }
 }
 

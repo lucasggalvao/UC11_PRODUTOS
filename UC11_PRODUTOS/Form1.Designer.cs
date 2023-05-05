@@ -41,6 +41,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.dataGridViewProdutos = new System.Windows.Forms.DataGridView();
             this.buttonAtualizar = new System.Windows.Forms.Button();
+            this.buttonAlterar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewProdutos)).BeginInit();
             this.SuspendLayout();
             // 
@@ -174,12 +175,23 @@
             this.buttonAtualizar.UseVisualStyleBackColor = true;
             this.buttonAtualizar.Click += new System.EventHandler(this.buttonAtualizar_Click);
             // 
+            // buttonAlterar
+            // 
+            this.buttonAlterar.Location = new System.Drawing.Point(78, 392);
+            this.buttonAlterar.Name = "buttonAlterar";
+            this.buttonAlterar.Size = new System.Drawing.Size(116, 23);
+            this.buttonAlterar.TabIndex = 13;
+            this.buttonAlterar.Text = "Alterar";
+            this.buttonAlterar.UseVisualStyleBackColor = true;
+            this.buttonAlterar.Click += new System.EventHandler(this.buttonAlterar_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::UC11_PRODUTOS.Properties.Resources.embiid;
             this.ClientSize = new System.Drawing.Size(621, 609);
+            this.Controls.Add(this.buttonAlterar);
             this.Controls.Add(this.buttonAtualizar);
             this.Controls.Add(this.dataGridViewProdutos);
             this.Controls.Add(this.label1);
@@ -217,6 +229,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridView dataGridViewProdutos;
         private System.Windows.Forms.Button buttonAtualizar;
+        private System.Windows.Forms.Button buttonAlterar;
     }
 }
 
